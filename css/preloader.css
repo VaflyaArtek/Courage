@@ -1,0 +1,144 @@
+.preloader {
+    height: auto;
+    background-image: url(../img/background-preloader.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: auto;
+    color: var(--preloader-color);
+}
+
+.preloader__subtitile-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.preloader__subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 500px;
+    height: 140px;
+    align-items: center;
+    border: 2px solid #fff;
+    margin: auto;
+    background-color: var(--preloader-btn-bg);
+    margin-top: 400px;
+    margin-left: 90px;
+}
+
+.background__bg-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 135px;
+    height: fit-content;
+    background-color: #0398dc;
+    color: #0398dc;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@media screen and (max-width: 1040px) {
+    .preloader {
+        background-image: url(../img/background-preloader-mobile.jpg);
+        background-size: 100% 120%;
+    }
+
+    .preloader__subtitle {
+        font-size: 20px;
+        margin: auto;
+        margin-top: 300px;
+        width: 500px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .preloader {
+        background-size: 100% 110%;
+    }
+    .preloader__subtitle{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .preloader {
+        background-size: 100% 85%;
+
+    }
+
+    .preloader__subtitle {
+        margin-top: 170px;
+    }
+
+    .background__bg-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .preloader__subtitle {
+        margin-top: 130px;
+    }
+}
+

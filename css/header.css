@@ -1,0 +1,27 @@
+.hero{
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header__img{
+    max-height: 250px;
+}
+
+.header__title{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.indent {
+    display: block;
+    text-indent: 2em; /* Встановлюємо відступ */
+}
+
+@media screen and (max-width: 700px) {
+    .header__desc-wrap{
+        text-align: center;
+    }
+}

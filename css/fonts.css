@@ -1,0 +1,8 @@
+@font-face {
+    src: url(../fonts/ComicalCartoon.ttf);
+    font-family: Comical Cartoon;
+}
+
+body{
+    font-family: Comical Cartoon;
+}

@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preloader-color: rgb(228, 228, 228);
+    --preloader-btn-bg: rgba(0, 0, 0, 0.7);
+    --main-color: #521043;
+    --clr-neon: hsl(0, 100%, 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+body {
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: .3s;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
